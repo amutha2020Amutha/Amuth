@@ -26,12 +26,12 @@ public class Screenshorts {
 		driver.manage().window().maximize();
 
 		TakesScreenshot tk = (TakesScreenshot) driver;
-
+		
 		File screen = tk.getScreenshotAs(OutputType.FILE);
 
-	    File dest = new File("C:\\Users\\user\\eclipse-workspace\\AmuthaMaven\\screenshort\\facebook.png");
+	   File dest = new File("C:\\Users\\user\\eclipse-workspace\\AmuthaMaven\\screenshort\\facebook.png");
 
-	    FileUtils.copyFile( screen, dest);
+	  FileUtils.copyFile( screen, dest);
 	}
 
 }
